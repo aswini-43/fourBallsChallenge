@@ -2,7 +2,7 @@ import processing.core.PApplet;
 
 class fourBallChallenge{
     PApplet p;
-    int a=1,b=1,c=1,d=1;
+    int speed1=1,speed2=1,speed3=1,speed4=1;
 
     public static final int WIDTH = 640;
     public static final int HEIGHT = 480;
@@ -13,19 +13,19 @@ class fourBallChallenge{
     }
     public void drawBall1(){
         p.ellipse(a,1*HEIGHT/5,DIAMETER,DIAMETER);
-        a+=1;
+        speed1+=1;
     }
     public void drawBall2(){
         p.ellipse(b,2*HEIGHT/5,DIAMETER,DIAMETER);
-        b+=2;
+        speed2+=2;
     }
     public void drawBall3(){
         p.ellipse(c,3*HEIGHT/5,DIAMETER,DIAMETER);
-        c+=3;
+        speed3+=3;
     }
     public void drawBall4(){
         p.ellipse(d,4*HEIGHT/5,DIAMETER,DIAMETER);
-        d+=4;
+        speed4+=4;
     }
 }
 
